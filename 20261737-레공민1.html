@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>내 상태창</title>
+<style>
+    
+ body {
+        background-color: #2b2b2b;
+        color: #f1f1f1;
+        font-family: 'Malgun Gothic',sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+      }
+      h1{
+        text-align: center;
+        color: #ffd700; /* 골드 색상 */
+        border-bottom: 2px dashed;
+      }
+      h2{
+        color: #4da6ff;
+        font-size: 80%;
+        margin-top: 25px;
+      }
+      table{
+        width: 100%;
+        border: 1px solid #2b2b2b;
+        background-color: #c5c4c4;
+        color: #333;
+        font-size: 90%;
+      }
+      th, td{
+        border: 1px solid #444;
+        padding: 10px;
+        text-align: center;
+
+      }
+      th{
+        background-color: #333;
+        color: #ff9999;
+      }
+      ul, ol {
+        background-color: #2a2a2a;
+        padding: 15px 15px 15px 35px;
+        border: 1px solid #444
+      }
+      .status-window{
+        background-color: #1e1e1e;
+        border: 3px solid #8b7355;
+        border-radius: 10px;
+        padding: 30px;
+        width: 400px;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+      }
+      .buff{
+        background-color: #193319;
+        color: #99ff99;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+        <div class="status-window">
+        <h1>1학년 신입생 (Lv. 1)</h1>
+        <!-- 1. 테이블 (Table): 행과 열로 이루어진 데이터 -->
+        <h2>*현재 능력치*</h2>
+        <table border="1">
+            <!-- 테이블 머리말 -->
+            <thead>
+                <tr>
+                    <th>능력치</th>
+                    <th>수치</th>
+                    <th>상태</th>
+                </tr>
+            </thead>
+            <!-- 테이블 본문 -->
+            <tbody>
+                <tr>
+                    <td>체력 (HP)</td>
+                    <td>100 / 100</td>
+                    <td>쌩쌩함</td>
+                </tr>
+                <tr>
+                    <td>코딩력 (INT)</td>
+                    <td>10</td>
+                    <td>성장 중</td>
+                </tr>
+                <tr>
+                    <td>수면욕 (SLP)</td>
+                    <td>999</td>
+                    <td>위험</td>
+                </tr>
+                <!-- colspan을 이용한 셀 병합 예시 -->
+                <tr>
+                    <td colspan="3" class="buff">@ 현재 버프: '아이스 아메리카노' 복용 (집중력 +20%)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 2. 순서가 있는 목록 (Ordered List): 순서가 중요한 데이터 -->
+        <h2>*오늘의 퀘스트*</h2>
+        <ol>
+            <li>웹 프로그래밍 수업 지각하지 않기</li>
+            <li>HTML 테이블 태그 완벽히 이해하기</li>
+            <li>학식 메뉴 성공적으로 고르기</li>
+        </ol>
+
+        <!-- 3. 순서가 없는 목록 (Unordered List): 순서가 상관없는 데이터 -->
+        <h2>*인벤토리 (보유 아이템)*</h2>
+        <ul>
+            <li>전공 서적 (무게: 5kg)</li>
+            <li>다 쓴 볼펜 1자루</li>
+            <li>먹다 남은 젤리</li>
+            <li>충전 안 된 무선 이어폰</li>
+        </ul>
+    </div>
+
+</body>
+</html>
