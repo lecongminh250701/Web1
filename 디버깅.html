@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>디버깅 실습: 제주도 여행 카드</title>
+    <style>
+    body {
+    background-color: #e9ecef;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.travel-card{
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.cover-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 25px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    text-align: center;
+
+}
+
+.desc {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    text-align: left;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #34495e;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db; 
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-align: center;
+
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+    </style>
+</head>
+<body>
+<div class="travel-card">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="제주도 바다" class="cover-img">
+   
+    <div class="content">
+        <h2>제주도 푸른 바다 여행</h2>
+        <p class="desc">에메랄드빛 바다와 함께하는 힐링 휴가</p>
+        
+        <ul>
+            <li><h3>항공편:</h3> 왕복 직항</li>
+            <li><h3>숙소:</h3> 오션뷰 4성급 호텔</li>
+            <li><h3>특전:</h3> 렌터카 48시간 무료</li>
+        </ul>
+        <a href="#" class="btn">지금 예약하기</a>
+    </div>
+</div>
+</body>
+</html>
